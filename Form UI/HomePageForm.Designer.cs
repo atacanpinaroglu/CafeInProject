@@ -148,9 +148,9 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(60, 30);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 28);
+            this.label11.Size = new System.Drawing.Size(85, 28);
             this.label11.TabIndex = 30;
-            this.label11.Text = "User";
+            this.label11.Text = "Kullanıcı";
             // 
             // title
             // 
@@ -511,7 +511,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.BackColor = System.Drawing.Color.Firebrick;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(500, 900);
             this.Controls.Add(this.panel2);

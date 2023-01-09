@@ -59,7 +59,8 @@ namespace Business.Concrete
 
         public IDataResult<User> GetByEmail(string email)
         {
-            var user = _userDal.GetByEmail(email);
+            var users = _userDal.GetAll();
+            var user = users.SingleOrDefault(u => u.Email == email);
             if (user != null)
             {
                 return new SuccessDataResult<User>(user);

@@ -42,10 +42,20 @@ namespace Form_UI
         int orderPrice = 0;
         int index = 0;
         private void OrderForm_Load(object sender, EventArgs e)
-        {
+        {           
             if (_userDetail != null)
             {
                 label11.Text = _userDetail.FirstName;
+                label5.Text = _userDetail.Address;
+                if (_userDetail.Address.Length > 27)
+                {
+                    var shortText = label5.Text.Substring(0, 25);
+                    label5.Text = shortText + "...";
+                }               
+            }
+            else
+            {
+                label5.Text = "";
             }
 
             foreach (var item in _orderDetails)
@@ -114,7 +124,7 @@ namespace Form_UI
         private void OrderIsEmpty()
         {
             Button button = new Button();
-            button.Height = 545;
+            button.Height = 546;
             button.Width = 442;
             button.ForeColor = Color.White;
             button.BackColor = Color.FromArgb(37, 40, 43);
@@ -132,36 +142,43 @@ namespace Form_UI
             
         }
         private void button1_Click(object sender, EventArgs e)
-        {
+        {            
             if (_orderDetails.Count > 0)
             {
-                Order order = new Order
+                if (_userDetail != null)
                 {
-                    UserId = _user.UserId,
-                    OrderDate = DateTime.Now,
-                    OrderPrice = orderPrice,
-                };
-                var result = _orderManager.Add(order);
-                if (result.Success)
-                {
-                    var result2 = _orderManager.GetOrderId(order);
-                    foreach (var item in _orderDetails)
+                    Order order = new Order
                     {
-                        OrderDetail orderDetail = new OrderDetail
+                        UserId = _user.UserId,
+                        OrderDate = DateTime.Now,
+                        OrderPrice = orderPrice,
+                    };
+                    var result = _orderManager.Add(order);
+                    if (result.Success)
+                    {
+                        var result2 = _orderManager.GetOrderId(order);
+                        foreach (var item in _orderDetails)
                         {
-                            OrderId = result2.Data,
-                            CoffeeId = item.CoffeeId,
-                            Amount = item.Amount,
-                            Price = item.Price,
-                        };
-                        _orderDetailManager.Add(orderDetail);
+                            OrderDetail orderDetail = new OrderDetail
+                            {
+                                OrderId = result2.Data,
+                                CoffeeId = item.CoffeeId,
+                                Amount = item.Amount,
+                                Price = item.Price,
+                            };
+                            _orderDetailManager.Add(orderDetail);
+                        }
+                        MessageBox.Show(Messages.OrderSuccessful);
+                        _orderDetails.Clear();
+                        flowLayoutPanel1.Controls.Clear();
+                        OrderIsEmpty();
+                        orderPrice = 0;
+                        label3.Text = orderPrice.ToString() + "₺";
                     }
-                    MessageBox.Show(Messages.OrderSuccessful);
-                    _orderDetails.Clear();
-                    flowLayoutPanel1.Controls.Clear();
-                    OrderIsEmpty();
-                    orderPrice = 0;
-                    label3.Text = orderPrice.ToString() + "₺";
+                }
+                else
+                {
+                    MessageBox.Show(Messages.AccountDetailsEmpty);
                 }                
             }
             else

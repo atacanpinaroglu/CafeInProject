@@ -57,7 +57,7 @@ namespace Form_UI
                     button.Width = 358;
                     button.BackColor = Color.FromArgb(37, 40, 43);
                     button.ForeColor = Color.White;
-                    button.Text = "Sipariş tarihi: " + item.OrderDate.ToString() + " - Fiyatı: " + Convert.ToInt32(item.OrderPrice).ToString() + "₺";
+                    button.Text = "Sipariş tarihi: " + item.OrderDate.ToString() + " - Tutarı: " + Convert.ToInt32(item.OrderPrice).ToString() + "₺";
                     button.TextAlign = ContentAlignment.MiddleLeft;
                     flowLayoutPanel1.Controls.Add(button);
 
@@ -184,6 +184,9 @@ namespace Form_UI
         }
         private void GoToGloriaForm()
         {
+            GloriaForm gloriaForm = new GloriaForm(_cafeManager, _coffeeManager, _orderManager, _orderDetailManager, _userManager, _userDetailManager, _user, _userDetail, _orderDetails);
+            gloriaForm.Show();
+            this.Hide();
         }
 
         private void profileButton_Click(object sender, EventArgs e)

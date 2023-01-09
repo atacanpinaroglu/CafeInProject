@@ -58,6 +58,8 @@
             this.homeButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -184,9 +186,8 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkOrange;
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -211,9 +212,8 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkOrange;
+            this.button2.BackColor = System.Drawing.Color.Firebrick;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,9 +236,9 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Black;
             this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(50, 115);
+            this.button4.Location = new System.Drawing.Point(50, 111);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(400, 231);
+            this.button4.Size = new System.Drawing.Size(400, 235);
             this.button4.TabIndex = 19;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -246,9 +246,9 @@
             // 
             this.button5.BackColor = System.Drawing.Color.Black;
             this.button5.Enabled = false;
-            this.button5.Location = new System.Drawing.Point(50, 371);
+            this.button5.Location = new System.Drawing.Point(50, 365);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(400, 400);
+            this.button5.Size = new System.Drawing.Size(400, 406);
             this.button5.TabIndex = 20;
             this.button5.UseVisualStyleBackColor = false;
             // 
@@ -293,9 +293,9 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(60, 30);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 28);
+            this.label11.Size = new System.Drawing.Size(85, 28);
             this.label11.TabIndex = 30;
-            this.label11.Text = "User";
+            this.label11.Text = "Kullanıcı";
             // 
             // exitButton
             // 
@@ -400,14 +400,39 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(300, 27);
             this.textBox2.TabIndex = 37;
+            this.textBox2.UseSystemPasswordChar = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(197, 120);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Hesap Ayarları";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Black;
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(197, 377);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(108, 20);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "Profil Detayları";
             // 
             // ProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.BackColor = System.Drawing.Color.Firebrick;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(500, 900);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel2);
@@ -472,5 +497,7 @@
         private Button homeButton;
         private TextBox textBox1;
         private TextBox textBox2;
+        private Label label1;
+        private Label label8;
     }
 }

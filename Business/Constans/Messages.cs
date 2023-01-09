@@ -22,5 +22,6 @@ namespace Business.Constans
         public static string UpdateAccountDetails = "Profil detayları güncellendi!";
         public static string OrderSuccessful = "Siparişiniz başarılı bir şekilde alınmıştır!";
         public static string CardIsEmpty = "Şu anda sepetiniz boş!\nSipariş verebilmek için lütfen sepete ürün ekleyin.";
+        public static string AccountDetailsEmpty = "Sipariş verebilmek için lütfen profil detaylarınızı güncelleyin.";
     }
 }

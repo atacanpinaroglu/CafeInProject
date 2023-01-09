@@ -3,6 +3,7 @@ using Business.Concrete;
 using Business.Constans;
 using Entities.Concrete;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,8 +53,6 @@ namespace Form_UI
                 textBox5.Text = _userDetail.Phone;
                 textBox6.Text = _userDetail.Address;
             }
-
-            textBox2.UseSystemPasswordChar = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -82,10 +81,11 @@ namespace Form_UI
                         _user.Password = textBox2.Text;
                         var result = _userManager.Update(_user);
                         MessageBox.Show(result.Message);
+                        checkBox1.Checked = false;
                     }                    
                 }
                 else
-                {                    
+                {
                     var result = _userManager.GetByEmail(textBox1.Text);
                     if (!result.Success)
                     {
@@ -101,22 +101,15 @@ namespace Form_UI
                             _user = user;
                             MessageBox.Show(result2.Message);
                         }
-                        else
-                        {
-                            textBox1.Clear();
-                            textBox2.Clear();
-                            textBox1.Focus();
-                            checkBox1.Checked = false;
-                        }
                     }
                     else
                     {
                         MessageBox.Show(Messages.UserAlreadyExist);
                         textBox1.Clear();
                         textBox2.Clear();
-                        textBox1.Focus();
-                        checkBox1.Checked = false;
-                    }                   
+                        textBox1.Focus();                       
+                    }
+                    checkBox1.Checked = false;
                 }               
             }           
         }

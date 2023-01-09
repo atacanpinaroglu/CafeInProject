@@ -30,17 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StarbucksForm));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.orderButton = new System.Windows.Forms.Button();
-            this.profileButton = new System.Windows.Forms.Button();
-            this.homeButton = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.exitButton = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.title = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -96,188 +85,25 @@
             this.remove4 = new System.Windows.Forms.Label();
             this.remove5 = new System.Windows.Forms.Label();
             this.remove6 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.title = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.profileButton = new System.Windows.Forms.Button();
+            this.orderButton = new System.Windows.Forms.Button();
+            this.homeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox6)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Black;
-            this.groupBox1.Controls.Add(this.orderButton);
-            this.groupBox1.Controls.Add(this.profileButton);
-            this.groupBox1.Controls.Add(this.homeButton);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(-2, 792);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(505, 113);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            // 
-            // orderButton
-            // 
-            this.orderButton.BackColor = System.Drawing.Color.Black;
-            this.orderButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("orderButton.BackgroundImage")));
-            this.orderButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.orderButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.orderButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.orderButton.FlatAppearance.BorderSize = 0;
-            this.orderButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.orderButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.orderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.orderButton.ForeColor = System.Drawing.Color.Black;
-            this.orderButton.ImageKey = "carticon.png";
-            this.orderButton.Location = new System.Drawing.Point(370, 20);
-            this.orderButton.Name = "orderButton";
-            this.orderButton.Size = new System.Drawing.Size(80, 80);
-            this.orderButton.TabIndex = 2;
-            this.orderButton.UseVisualStyleBackColor = false;
-            this.orderButton.Click += new System.EventHandler(this.orderButton_Click);
-            // 
-            // profileButton
-            // 
-            this.profileButton.BackColor = System.Drawing.Color.Black;
-            this.profileButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("profileButton.BackgroundImage")));
-            this.profileButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.profileButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.profileButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.profileButton.FlatAppearance.BorderSize = 0;
-            this.profileButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.profileButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.profileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.profileButton.ForeColor = System.Drawing.Color.Black;
-            this.profileButton.ImageIndex = 1;
-            this.profileButton.Location = new System.Drawing.Point(48, 20);
-            this.profileButton.Name = "profileButton";
-            this.profileButton.Size = new System.Drawing.Size(82, 82);
-            this.profileButton.TabIndex = 1;
-            this.profileButton.UseVisualStyleBackColor = false;
-            this.profileButton.Click += new System.EventHandler(this.profileButton_Click);
-            // 
-            // homeButton
-            // 
-            this.homeButton.BackColor = System.Drawing.Color.Black;
-            this.homeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("homeButton.BackgroundImage")));
-            this.homeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.homeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.homeButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.homeButton.FlatAppearance.BorderSize = 0;
-            this.homeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.homeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.homeButton.ForeColor = System.Drawing.Color.Black;
-            this.homeButton.ImageIndex = 0;
-            this.homeButton.Location = new System.Drawing.Point(210, 20);
-            this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(80, 80);
-            this.homeButton.TabIndex = 0;
-            this.homeButton.UseVisualStyleBackColor = false;
-            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.Black;
-            this.groupBox2.Controls.Add(this.exitButton);
-            this.groupBox2.Controls.Add(this.pictureBox5);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.title);
-            this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(-2, -12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(505, 103);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            // 
-            // exitButton
-            // 
-            this.exitButton.BackColor = System.Drawing.Color.Black;
-            this.exitButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exitButton.BackgroundImage")));
-            this.exitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.exitButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.exitButton.FlatAppearance.BorderSize = 0;
-            this.exitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.ForeColor = System.Drawing.Color.Black;
-            this.exitButton.ImageIndex = 0;
-            this.exitButton.Location = new System.Drawing.Point(442, 27);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(55, 55);
-            this.exitButton.TabIndex = 42;
-            this.exitButton.UseVisualStyleBackColor = false;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(17, 22);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox5.TabIndex = 41;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(49, 25);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 28);
-            this.label11.TabIndex = 40;
-            this.label11.Text = "Name";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Black;
-            this.label16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(44, 62);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(50, 23);
-            this.label16.TabIndex = 39;
-            this.label16.Text = "0.00₺";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Black;
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(24, 62);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(20, 20);
-            this.button7.TabIndex = 38;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // title
-            // 
-            this.title.AutoSize = true;
-            this.title.BackColor = System.Drawing.Color.Transparent;
-            this.title.Font = new System.Drawing.Font("Times New Roman", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.title.ForeColor = System.Drawing.Color.White;
-            this.title.Location = new System.Drawing.Point(148, 27);
-            this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(210, 53);
-            this.title.TabIndex = 16;
-            this.title.Text = "Starbucks";
             // 
             // label1
             // 
@@ -353,9 +179,8 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkOrange;
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageKey = "addToCard.png";
@@ -376,9 +201,8 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkOrange;
+            this.button2.BackColor = System.Drawing.Color.Firebrick;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageKey = "addToCard.png";
@@ -392,9 +216,8 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkOrange;
+            this.button3.BackColor = System.Drawing.Color.Firebrick;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageKey = "addToCard.png";
@@ -408,9 +231,8 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkOrange;
+            this.button4.BackColor = System.Drawing.Color.Firebrick;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageKey = "addToCard.png";
@@ -424,9 +246,8 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.DarkOrange;
+            this.button5.BackColor = System.Drawing.Color.Firebrick;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.ImageKey = "addToCard.png";
@@ -440,9 +261,8 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkOrange;
+            this.button6.BackColor = System.Drawing.Color.Firebrick;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.ImageKey = "addToCard.png";
@@ -973,14 +793,151 @@
             this.remove6.Text = "-";
             this.remove6.Click += new System.EventHandler(this.remove6_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.title);
+            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.exitButton);
+            this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(505, 90);
+            this.panel1.TabIndex = 89;
+            // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.BackColor = System.Drawing.Color.Transparent;
+            this.title.Font = new System.Drawing.Font("Times New Roman", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.title.ForeColor = System.Drawing.Color.White;
+            this.title.Location = new System.Drawing.Point(148, 17);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(210, 53);
+            this.title.TabIndex = 16;
+            this.title.Text = "Starbucks";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(27, 27);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox7.TabIndex = 31;
+            this.pictureBox7.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(60, 30);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(85, 28);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "Kullanıcı";
+            // 
+            // exitButton
+            // 
+            this.exitButton.BackColor = System.Drawing.Color.Transparent;
+            this.exitButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exitButton.BackgroundImage")));
+            this.exitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.exitButton.FlatAppearance.BorderSize = 0;
+            this.exitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitButton.ForeColor = System.Drawing.Color.Black;
+            this.exitButton.ImageIndex = 0;
+            this.exitButton.Location = new System.Drawing.Point(435, 17);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(55, 55);
+            this.exitButton.TabIndex = 22;
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.profileButton);
+            this.panel2.Controls.Add(this.orderButton);
+            this.panel2.Controls.Add(this.homeButton);
+            this.panel2.Location = new System.Drawing.Point(-2, 790);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(505, 110);
+            this.panel2.TabIndex = 90;
+            // 
+            // profileButton
+            // 
+            this.profileButton.BackColor = System.Drawing.Color.Transparent;
+            this.profileButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("profileButton.BackgroundImage")));
+            this.profileButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.profileButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.profileButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.profileButton.FlatAppearance.BorderSize = 0;
+            this.profileButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.profileButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.profileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.profileButton.ForeColor = System.Drawing.Color.Black;
+            this.profileButton.ImageIndex = 1;
+            this.profileButton.Location = new System.Drawing.Point(48, 15);
+            this.profileButton.Name = "profileButton";
+            this.profileButton.Size = new System.Drawing.Size(82, 82);
+            this.profileButton.TabIndex = 1;
+            this.profileButton.UseVisualStyleBackColor = false;
+            this.profileButton.Click += new System.EventHandler(this.profileButton_Click);
+            // 
+            // orderButton
+            // 
+            this.orderButton.BackColor = System.Drawing.Color.Transparent;
+            this.orderButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("orderButton.BackgroundImage")));
+            this.orderButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.orderButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.orderButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.orderButton.FlatAppearance.BorderSize = 0;
+            this.orderButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.orderButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.orderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.orderButton.ForeColor = System.Drawing.Color.Black;
+            this.orderButton.ImageKey = "carticon.png";
+            this.orderButton.Location = new System.Drawing.Point(370, 16);
+            this.orderButton.Name = "orderButton";
+            this.orderButton.Size = new System.Drawing.Size(80, 80);
+            this.orderButton.TabIndex = 2;
+            this.orderButton.UseVisualStyleBackColor = false;
+            this.orderButton.Click += new System.EventHandler(this.orderButton_Click);
+            // 
+            // homeButton
+            // 
+            this.homeButton.BackColor = System.Drawing.Color.Transparent;
+            this.homeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("homeButton.BackgroundImage")));
+            this.homeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.homeButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.homeButton.FlatAppearance.BorderSize = 0;
+            this.homeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.homeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homeButton.ForeColor = System.Drawing.Color.Black;
+            this.homeButton.ImageIndex = 0;
+            this.homeButton.Location = new System.Drawing.Point(210, 16);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(80, 80);
+            this.homeButton.TabIndex = 0;
+            this.homeButton.UseVisualStyleBackColor = false;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            // 
             // StarbucksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.Firebrick;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(500, 900);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.remove6);
             this.Controls.Add(this.remove5);
             this.Controls.Add(this.remove4);
@@ -1028,8 +985,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.button12);
@@ -1042,29 +997,22 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StarbucksForm";
             this.Load += new System.EventHandler(this.StarbucksForm_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cirlePictureBox6)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private GroupBox groupBox1;
-        private Button orderButton;
-        private Button profileButton;
-        private Button homeButton;
-        private GroupBox groupBox2;
-        private Label title;
         private Label label1;
         private Label label2;
         private Label label3;
@@ -1096,17 +1044,12 @@
         private Label label5;
         private Label label9;
         private Label label10;
-        private PictureBox pictureBox5;
-        private Label label11;
-        private Label label16;
-        private Button button7;
         private CirlePictureBox cirlePictureBox1;
         private CirlePictureBox cirlePictureBox2;
         private CirlePictureBox cirlePictureBox3;
         private CirlePictureBox cirlePictureBox4;
         private CirlePictureBox cirlePictureBox5;
         private CirlePictureBox cirlePictureBox6;
-        private Button exitButton;
         private Label amount1;
         private Label add1;
         private Label remove1;
@@ -1125,5 +1068,14 @@
         private Label remove4;
         private Label remove5;
         private Label remove6;
+        private Panel panel1;
+        private Label title;
+        private PictureBox pictureBox7;
+        private Label label11;
+        private Button exitButton;
+        private Panel panel2;
+        private Button profileButton;
+        private Button orderButton;
+        private Button homeButton;
     }
 }
