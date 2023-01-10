@@ -179,6 +179,7 @@ namespace Form_UI
                     {
                         _userDetail = userDetail;
                         MessageBox.Show(result.Message);
+                        label11.Text = _userDetail.FirstName;
                     }
                 }
                 else
