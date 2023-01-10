@@ -207,6 +207,6 @@ namespace Form_UI
             LoginForm loginForm = new LoginForm(_cafeManager, _coffeeManager, _orderManager, _orderDetailManager, _userManager, _userDetailManager);
             loginForm.Show();
             this.Hide();
-        }       
+        }
     }
 }
